@@ -121,26 +121,21 @@ nav:
     - dokdo/intro.md
     - dokdo/roadmap.md
     - dokdo/brand.md
-    - Entity:
+    - About:
       - dokdo/entity.md
-    - Whitepaper:
       - dokdo/whitepaper.md
     - Legal:
-      - Privacy:
-        - dokdo/privacy-policy.md
-      - Terms and Conditions:
-        - dokdo/terms-and-conditions.md
+      - dokdo/privacy-policy.md
+      - dokdo/terms-and-conditions.md
   - tymt:
     - Introduction:
       - tymt/intro.md
       - tymt/roadmap.md
       - tymt/changelog.md
     - tymtLauncher:
-      - tymt/tymtlauncher.md
-      - Tutorial:
-        - tymt/tymtlauncher/tutorial.md
+      - tymt/tymtlauncher/introduction.md
     - tymt Developer Console:
-      - tymt/dev-console/intro.md
+      - tymt/dev-console/introduction.md
   - Solar Wallet:
     - solarwallet/intro.md
     - solarwallet/roadmap.md
