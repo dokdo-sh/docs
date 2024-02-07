@@ -23,7 +23,7 @@ site_description: >-
   Documentation for Dokdo Related Products
 
 # Repository
-repo_name: solar-network/docs
+repo_name: dokdo-sh/docs
 repo_url: https://github.com/dokdo.sh/docs
 
 # Copyright
