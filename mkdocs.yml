@@ -1,0 +1,158 @@
+# Copyright (c) 2016-2022 Solar Network <info@solar.org>
+#
+#  This work is licensed under a Creative Commons Attribution-NoDerivatives
+#  4.0 International License.
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+
+# Project information
+site_name: Dokdo Documentation
+site_url: https://docs.dokdo.sh
+site_author: Nayiem Willems
+site_description: >-
+  Documentation for Dokdo Related Products
+
+# Repository
+repo_name: solar-network/docs
+repo_url: https://github.com/dokdo.sh/docs
+
+# Copyright
+copyright: Copyright &copy; 2023 - 2024 dokdo.sh
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  extra_css:
+  - stylesheets/extra.css
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Defaults
+  language: en
+  features:
+    - content.code.annotate
+    - header.autohide
+    - navigation.expand
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.ico
+  logo: assets/images/logo.svg
+
+# Plugins
+plugins:
+  - minify:
+      minify_html: true
+  - search
+  - swagger-ui-tag:
+      supportedSubmitMethods: ["get", "post"]
+      validatorUrl: "https://validator.swagger.io/validator"
+
+# Customization
+extra:
+  # analytics:
+  #   provider: google
+  #   property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dokdo-sh
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.dokdo.sh
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.superfences
+
+# Page tree
+nav:
+  - Home: index.md
+  - Dokdo:
+    - dokdo/intro.md
+    - dokdo/roadmap.md
+    - Entity:
+      - dokdo/entity.md
+    - Whitepaper:
+      - dokdo/whitepaper.md
+    - Legal:
+      - Privacy:
+        - dokdo/privacy-policy.md
+      - Terms and Conditions:
+        - dokdo/terms-and-conditions.md
+  - tymt:
+    - Introduction:
+      - tymt/intro.md
+      - tymt/roadmap.md
+      - tymt/changelog.md
+    - tymtLauncher:
+      - tymt/tymtlauncher.md
+      - Tutorial:
+        - tymt/tymtlauncher/tutorial.md
+    - tymt Developer Console:
+      - tymt/dev-console/intro.md
+  - Solar Wallet:
+    - solarwallet/intro.md
+    - solarwallet/roadmap.md
+    - solarwallet/changelog.md
+  - District 53:
+    - d53/intro.md
+    - d53/roadmap.md
+    - d53/changelog.md
+  - Solar Card:
+    - solarcard/intro.md
+    - solarcard/roadmap.md
+    - solarcard/changelog.md
+  - Brand:
+    - brand/intro.md
+  - Support:
+    - support/intro.md
