@@ -120,6 +120,7 @@ nav:
   - Dokdo:
     - dokdo/intro.md
     - dokdo/roadmap.md
+    - dokdo/brand.md
     - Entity:
       - dokdo/entity.md
     - Whitepaper:
@@ -152,7 +153,5 @@ nav:
     - solarcard/intro.md
     - solarcard/roadmap.md
     - solarcard/changelog.md
-  - Brand:
-    - brand/intro.md
   - Support:
     - support/intro.md
